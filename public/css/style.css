@@ -1,0 +1,59 @@
+:root {
+  /* colors */
+  /* --clr-dark: #000000;
+  --clr-light: #FFFFFF;
+  --clr-slate100: #f1f5f9;
+  --clr-slate200: #e2e8f0;
+  --clr-sky600: #0284c7;
+  --clr-sky950: #082f49; */
+  --clr-slate950: #020617;
+  --clr-slate50: #f8fafc;
+  --clr-blue950: #172554;
+
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+  
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--clr-slate950);
+  color: var(--clr-slate50);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
