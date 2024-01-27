@@ -35,6 +35,7 @@
 } */
 
 input,
+select,
 textarea {
   border:none;
   background-image:none;
