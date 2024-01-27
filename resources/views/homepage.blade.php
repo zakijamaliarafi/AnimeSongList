@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/bar.css">
     <link rel="stylesheet" href="css/utils.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +15,7 @@
     <title>AnimeSongList</title>
 </head>
 <body>
+    {{-- Header Start --}}
     <header class="container">
         <div class="header" id="header">
             <div class="title">
@@ -51,7 +53,39 @@
             </div>
         </div>
     </header>
+    {{-- Header End --}}
 
+    {{-- Select Bar Start --}}
+    <div class="container">
+        <div class="select-bar-container">
+            <div class="select-bar">
+                <div class="bar-text">
+                    <p>Winter 2024</p>
+                </div>
+                <div class="arrow">
+                    <div class="arrow-down" id="arrow-down" onclick="displayBar('show')">
+                        <i class="fa-solid  fa-chevron-down fa-xl"></i>
+                    </div>
+                    <div class="arrow-up" id="arrow-up" onclick="displayBar('close')">
+                        <i class="fa-solid fa-chevron-up fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="select-form" id="select-form">
+                <form action="/">
+                    <select name="season">
+                        <option value="winter">Winter</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="autumn">Autumn</option>
+                      </select>
+                    <input name="year" type="text" placeholder=" Year">
+                    <button type="submit">Go</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{-- Select Bar End --}}
     <script src="js/main.js"></script>
 </body>
 </html>
