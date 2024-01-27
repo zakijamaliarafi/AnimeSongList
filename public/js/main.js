@@ -21,3 +21,18 @@ function displaySearch(condition) {
         z.style.display = "block";
     }
 }
+
+function displayBar(condition) {
+    var x = document.getElementById("select-form");
+    var y = document.getElementById("arrow-down");
+    var z = document.getElementById("arrow-up");
+    if (condition == "close") {
+        x.style.display = "none";
+        y.style.display = "block";
+        z.style.display = "none";
+    } else {
+        x.style.display = "block";
+        y.style.display = "none";
+        z.style.display = "block";
+    }
+}
