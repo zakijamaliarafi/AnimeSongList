@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/components/header.css">
     <link rel="stylesheet" href="css/components/bar.css">
     <link rel="stylesheet" href="css/components/catalog.css">
+    <link rel="stylesheet" href="css/components/footer.css">
     <link rel="stylesheet" href="css/utils.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -142,6 +143,15 @@
         </div>
     </main>
     {{-- Catalog End --}}
+
+    {{-- Footer Start --}}
+    <footer class="container">
+        <div class="footer-container">
+            <hr>
+            <p>Copyright &copy; 2024 Zaki Jamali Arafi</p>
+        </div>
+    </footer>
+    {{-- Footer Start --}}
     <script src="js/main.js"></script>
 </body>
 </html>
