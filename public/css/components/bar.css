@@ -60,16 +60,44 @@
 /* @media (min-width: 475px) {} */
 
 /* sm */
-/* @media (min-width: 640px) {} */
+@media (min-width: 640px) {
+    .select-bar-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
 
 /* md */
 /* @media (min-width: 768px) {} */
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+    .select-bar-container {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .select-bar p {
+        font-size: var(--size-2xl);
+    }
+}
 
 /* xl */
-/* @media (min-width: 1280px) {} */
+@media (min-width: 1280px) {
+    .select-bar-container {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
 
 /* 2xl */
-/* @media (min-width: 1536px) {} */
+@media (min-width: 1536px) {
+    .select-bar-container {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    .select-bar p {
+        font-size: var(--size-3xl);
+    }
+}
