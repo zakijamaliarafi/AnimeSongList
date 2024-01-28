@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components/header.css">
     <link rel="stylesheet" href="css/components/bar.css">
+    <link rel="stylesheet" href="css/components/catalog.css">
     <link rel="stylesheet" href="css/utils.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,6 +87,61 @@
         </div>
     </div>
     {{-- Select Bar End --}}
+
+    {{-- Catalog Start --}}
+    <main class="container">
+        <div class="catalog-container">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{asset('images/solo.jpg')}}" alt="Solo Leveling">
+                </div>
+                <div class="card-title">
+                    <p>Ore dake Level Up na Ken</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{asset('images/cote.jpg')}}" alt="Classroom of the Elite III">
+                </div>
+                <div class="card-title">
+                    <p>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{asset('images/mashle.jpg')}}" alt="Mashle">
+                </div>
+                <div class="card-title">
+                    <p>Mashle: Shinkakusha Kouho Senbatsu Shiken-hen</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{asset('images/tsukimichi.jpg')}}" alt="Tsukimichi">
+                </div>
+                <div class="card-title">
+                    <p>Tsuki ga Michibiku Isekai Douchuu 2nd Season</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{asset('images/dunmes.jpg')}}" alt="Delicious in Dungeon">
+                </div>
+                <div class="card-title">
+                    <p>Dungeon Meshi</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{asset('images/mato.jpg')}}" alt="Chained Soldier">
+                </div>
+                <div class="card-title">
+                    <p>Mato Seihei no Slave</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    {{-- Catalog End --}}
     <script src="js/main.js"></script>
 </body>
 </html>
