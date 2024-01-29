@@ -16,6 +16,11 @@
     /* border: 1px solid red; */
 }
 
+.card:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
 .card-image {
     height: 318px;
     /* width: 225px; */
