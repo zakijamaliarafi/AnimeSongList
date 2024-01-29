@@ -94,50 +94,50 @@
         <div class="catalog-container">
             <div class="card">
                 <div class="card-image">
-                    <img src="{{asset('images/solo.jpg')}}" alt="Solo Leveling">
+                    <a href="/"><img src="{{asset('images/solo.jpg')}}" alt="Solo Leveling"></a>
                 </div>
                 <div class="card-title">
-                    <p>Ore dake Level Up na Ken</p>
+                    <a href=""><p>Ore dake Level Up na Ken</p></a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="{{asset('images/cote.jpg')}}" alt="Classroom of the Elite III">
+                    <a href="/"><img src="{{asset('images/cote.jpg')}}" alt="Classroom of the Elite III"></a>
                 </div>
                 <div class="card-title">
-                    <p>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season</p>
+                    <a href="/"><p>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season</p></a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="{{asset('images/mashle.jpg')}}" alt="Mashle">
+                    <a href="/"><img src="{{asset('images/mashle.jpg')}}" alt="Mashle"></a>
                 </div>
                 <div class="card-title">
-                    <p>Mashle: Shinkakusha Kouho Senbatsu Shiken-hen</p>
+                    <a href="/"><p>Mashle: Shinkakusha Kouho Senbatsu Shiken-hen</p></a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="{{asset('images/tsukimichi.jpg')}}" alt="Tsukimichi">
+                    <a href="/"><img src="{{asset('images/tsukimichi.jpg')}}" alt="Tsukimichi"></a>
                 </div>
                 <div class="card-title">
-                    <p>Tsuki ga Michibiku Isekai Douchuu 2nd Season</p>
+                    <a href="/"><p>Tsuki ga Michibiku Isekai Douchuu 2nd Season</p></a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="{{asset('images/dunmes.jpg')}}" alt="Delicious in Dungeon">
+                    <a href="/"><img src="{{asset('images/dunmes.jpg')}}" alt="Delicious in Dungeon"></a>
                 </div>
                 <div class="card-title">
-                    <p>Dungeon Meshi</p>
+                    <a href="/"><p>Dungeon Meshi</p></a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-image">
-                    <img src="{{asset('images/mato.jpg')}}" alt="Chained Soldier">
+                    <a href="/"><img src="{{asset('images/mato.jpg')}}" alt="Chained Soldier"></a>
                 </div>
                 <div class="card-title">
-                    <p>Mato Seihei no Slave</p>
+                    <a href="/"><p>Mato Seihei no Slave</p></a>
                 </div>
             </div>
         </div>
