@@ -23,7 +23,7 @@ function displaySearch(condition) {
 }
 
 function displayBar(condition) {
-    var x = document.getElementById("select-form");
+    var x = document.getElementById("bar-form");
     var y = document.getElementById("arrow-down");
     var z = document.getElementById("arrow-up");
     if (condition == "close") {

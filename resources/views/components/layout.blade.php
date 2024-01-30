@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bar-form" id="select-form">
+            <div class="bar-form" id="bar-form">
                 <form action="/">
                     <select name="season">
                         <option value="winter">Winter</option>
