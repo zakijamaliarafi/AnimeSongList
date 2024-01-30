@@ -57,10 +57,10 @@
     </header>
     {{-- Header End --}}
 
-    {{-- Select Bar Start --}}
+    {{-- Bar Start --}}
     <div class="container">
-        <div class="select-bar-container">
-            <div class="select-bar">
+        <div class="bar-container">
+            <div class="bar">
                 <div class="bar-text">
                     <p>Winter 2024</p>
                 </div>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="select-form" id="select-form">
+            <div class="bar-form" id="select-form">
                 <form action="/">
                     <select name="season">
                         <option value="winter">Winter</option>
@@ -87,7 +87,7 @@
             </div>
         </div>
     </div>
-    {{-- Select Bar End --}}
+    {{-- Bar End --}}
 
     {{-- Main Content Start --}}
     <main class="container">
