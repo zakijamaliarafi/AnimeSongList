@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnimeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('anime.index');
-});
+// All Anime
+Route::get('/', [AnimeController::class, 'index']);
+
+// Single Anime
+Route::get('/anime/{anime}', [AnimeController::class, 'show']);
