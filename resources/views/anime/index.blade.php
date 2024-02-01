@@ -32,7 +32,18 @@
     {{-- Main Content Start --}}
     <main class="container">
         <div class="catalog-container">
-            <div class="card">
+            
+            @if(count($anime_list) == 0)
+            <p>No anime found</p>
+            @else
+
+            @foreach($anime_list as $anime)
+                <x-card :anime="$anime" />
+            @endforeach
+
+            @endif
+
+            {{-- <div class="card">
                 <div class="card-image">
                     <a href="/"><img src="{{asset('images/solo.jpg')}}" alt="Solo Leveling"></a>
                 </div>
@@ -79,7 +90,7 @@
                 <div class="card-title">
                     <a href="/"><p>Mato Seihei no Slave</p></a>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </main>
     {{-- Main Content End --}}
