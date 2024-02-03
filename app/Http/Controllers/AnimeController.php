@@ -9,7 +9,7 @@ class AnimeController extends Controller
 {
     // Show all anime
     public function index() {
-        // get title for bar
+        // get title for bar, future change note: combine with filter method to avoid DRY
         $bar_title = 'Winter 2024'; // default title
         if(request('search') ?? false) {
             $bar_title = 'Search Results for ' . '"' . request('search') . '"';
