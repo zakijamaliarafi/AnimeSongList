@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\AnimeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\AnimeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,18 @@ Route::get('/', [AnimeController::class, 'index']);
 
 // Single Anime
 Route::get('/anime/{anime}', [AnimeController::class, 'show']);
+
+// Show Dashboard
+Route::get('/dashboard', [UserController::class, 'dashboard'])
+->middleware('auth');
+
+// Show Dashboard Login Form
+Route::get('/dashboard/login', [UserController::class, 'login'])
+->name('login')
+->middleware('guest');
+
+// Log User Out
+Route::post('/dashboard/logout', [UserController::class, 'logout']);
+
+// Log In User
+Route::post('/dashboard/authenticate', [UserController::class, 'authenticate']);
