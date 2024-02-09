@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class AnimeController extends Controller
 {
-    // Show all anime
+    // Show All Anime
     public function index() {
         // get title for bar, future change note: combine with filter method to avoid DRY
         $bar_title = 'Winter 2024'; // default title
@@ -24,7 +24,7 @@ class AnimeController extends Controller
         ]);
     }
 
-    // Show single anime
+    // Show Single Anime
     public function show(Anime $anime) {
         return view('anime.show', [
             'anime' => $anime
