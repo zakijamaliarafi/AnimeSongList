@@ -1,0 +1,57 @@
+.form-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+.form-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: var(--size-2xl);
+    padding: 1rem 5rem 1rem 5rem; 
+    background-color: var(--clr-blue950);
+}
+
+.form-input {
+    padding: 1rem 0 1rem 0;
+    background-color: rgba(148, 163, 184, 0.1);
+}
+
+.input-box {
+    width: fit-content;
+    margin: 1rem auto 1rem auto;
+    background-color: var(--clr-blue950);
+}
+
+.input-box input {
+    width: 250px;
+    height: 2rem;
+}
+
+.input-box i {
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.form-input button {
+    margin-bottom: 1rem;
+    margin-left: 1.4rem;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
