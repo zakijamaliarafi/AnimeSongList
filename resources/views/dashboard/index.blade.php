@@ -1,16 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dahsboard</title>
-</head>
-<body>
-    <h1>This is dashboard</h1>
-    <form method="POST" action="/dashboard/logout">
-        @csrf
-        <button type="submit">Log out</button>
-    </form>
-</body>
-</html>
+<x-layout>
+    {{-- Header Start --}}
+    <header class="container">
+        <div class="header" id="header">
+            <div class="title">
+                <a href="/">Dashboard</a>
+            </div>
+            @include('partials._logout')
+        </div>
+    </header>
+    {{-- Header End --}}
+
+    {{-- Bar Start --}}
+    <x-bar>
+        <div class="bar">
+            <div class="bar-text">
+                <p>Manage List</p>
+            </div>
+        </div>
+    </x-bar>
+    {{-- Bar End --}}
+</x-layout>
