@@ -1,4 +1,16 @@
 <x-layout>
+    {{-- Header Start --}}
+    <header class="container">
+        <div class="header" id="header">
+            <div class="title">
+                <a href="/">AnimeSongList</a>
+            </div>
+            @include('partials._search')
+        </div>
+        @include('partials._search-mobile')
+    </header>
+    {{-- Header End --}}
+
     {{-- Bar Start --}}
     <x-bar>
         <div class="bar">
