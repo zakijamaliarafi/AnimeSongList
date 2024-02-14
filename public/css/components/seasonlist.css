@@ -1,0 +1,119 @@
+.season-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* border: 1px solid red; */
+}
+
+.season-list-mobile {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 425px;
+    /* border: 1px solid red; */
+}
+
+.season-list-mobile hr {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.season-list-year {
+    text-align: center;
+    font-weight: 500;
+    font-size: var(--size-xl);
+    color: var(--clr-slate50);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    background-color: var(--clr-blue950);
+    border-radius: 5px 5px 0 0;
+}
+
+.season-list-period {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    font-weight: 400;
+    font-size: var(--size-lg);
+    color: var(--clr-slate50);
+    background-color: rgba(148, 163, 184, 0.1);
+    border-radius: 0 0 5px 5px;
+}
+
+.season-list-dekstop {
+    display: none;
+}
+
+.season-list-period-dekstop {
+    width: 24%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: var(--size-lg);
+    color: var(--clr-slate50);
+    background-color: rgba(148, 163, 184, 0.1);
+    border-radius: 5px;
+    /* border: 1px solid red; */
+}
+
+.season-list-period-dekstop p {
+    display: inline;
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+    .season-list-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .season-list-container {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .season-list-mobile {
+        display: none;
+    }
+
+    .season-list-dekstop {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .season-list-container {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .season-list-container {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    .season-list-period-dekstop {
+        font-size: var(--size-xl);
+    }
+}
