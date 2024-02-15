@@ -3,7 +3,7 @@
     <header class="container">
         <div class="header" id="header">
             <div class="title">
-                <a href="/">Dashboard</a>
+                <a href="/dashboard">Dashboard</a>
             </div>
             @include('partials._logout')
         </div>
