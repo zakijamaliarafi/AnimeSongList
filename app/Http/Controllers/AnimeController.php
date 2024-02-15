@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Anime;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AnimeController extends Controller
 {
@@ -28,6 +29,16 @@ class AnimeController extends Controller
     public function show(Anime $anime) {
         return view('anime.show', [
             'anime' => $anime
+        ]);
+    }
+
+    // Show Anime List by Season
+    public function seasonAnimeList(string $year, string $period) {
+        $airing_season = $period . " " . $year;
+
+        return view('dashboard.show', [
+            'anime_list' => DB::table('anime_list')->where('airing_season', $airing_season)->get(),
+            'bar_title' => $airing_season
         ]);
     }
 }
