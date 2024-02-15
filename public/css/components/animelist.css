@@ -1,0 +1,124 @@
+.anime-list-container {
+    margin: 2rem 1rem 2rem 1rem;
+    /* border: 1px solid red; */
+}
+
+.add-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+}
+
+.add-btn {
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    font-weight: 400;
+    font-size: var(--size-base);
+    color: var(--clr-slate50);
+    background-color: var(--clr-blue950);
+    border-radius: 5px;
+}
+
+.anime-list {
+    font-weight: 400;
+    font-size: var(--size-base);
+    margin-top: 1rem;
+    /* border: 1px solid red; */
+}
+
+.anime-list hr {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.anime-list-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.anime-list-item p {
+    width: 60%;
+}
+
+.ellipsis { 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.delete-btn {
+    display: inline-block;
+    font-weight: 400;
+    font-size: var(--size-sm);
+    background: none;
+    color: var(--clr-slate50);
+    border: none;
+    cursor: pointer; 
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+    .anime-list-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .anime-list-item p {
+        width: 70%;
+    }
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .anime-list-container {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .add-btn {
+        font-size: var(--size-lg);
+    }
+
+    .anime-list {
+        font-size: var(--size-lg);
+    }
+
+    .delete-btn {
+        font-size: var(--size-lg);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .anime-list-container {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .anime-list-container {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    .add-btn {
+        font-size: var(--size-xl);
+    }
+
+    .anime-list {
+        font-size: var(--size-xl);
+    }
+
+    .delete-btn {
+        font-size: var(--size-xl);
+    }
+}
