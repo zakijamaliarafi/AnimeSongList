@@ -25,6 +25,10 @@ Route::get('/anime/{anime}', [AnimeController::class, 'show']);
 Route::get('/dashboard', [UserController::class, 'dashboard'])
 ->middleware('auth');
 
+// Show Dashboard Anime List by Season
+Route::get('/dashboard/season/{year}/{period}', [AnimeController::class, 'seasonAnimeList'])
+->middleware('auth');
+
 // Show Dashboard Login Form
 Route::get('/dashboard/login', [UserController::class, 'login'])
 ->name('login')
