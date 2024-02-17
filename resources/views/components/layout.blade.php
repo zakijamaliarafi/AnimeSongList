@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{asset('css/components/content.css')}}">
     <link rel="stylesheet" href="{{asset('css/components/seasonlist.css')}}">
     <link rel="stylesheet" href="{{asset('css/components/animelist.css')}}">
+    <link rel="stylesheet" href="{{asset('css/components/form.css')}}">
     <link rel="stylesheet" href="{{asset('css/components/footer.css')}}">
     <link rel="stylesheet" href="{{asset('css/utils.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
