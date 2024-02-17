@@ -43,6 +43,8 @@ textarea {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  padding: 0 0.5rem 0 0.5rem;
+  font-size: var(--size-base);
 }
 
 /* textarea {
