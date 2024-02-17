@@ -29,13 +29,34 @@ Route::get('/dashboard', [UserController::class, 'dashboard'])
 Route::get('/dashboard/season/{year}/{period}', [AnimeController::class, 'seasonAnimeList'])
 ->middleware('auth');
 
+// Show Create Form
+Route::get('/dashboard/anime/create', [AnimeController::class, 'create'])
+->middleware('auth');
+
+// Store Anime Data
+Route::post('/dashboard/anime', [AnimeController::class, 'store'])
+->middleware('auth');
+
+// Show Edit Form
+Route::get('/dashboard/anime/{anime}/edit', [AnimeController::class, 'edit'])
+->middleware('auth');
+
+// Update Anime
+Route::put('/dashboard/anime/{anime}', [AnimeController::class, 'update'])
+->middleware('auth');
+
+// Delete Listing
+Route::delete('/dashboard/anime/{anime}', [AnimeController::class, 'destroy'])
+->middleware('auth');
+
 // Show Dashboard Login Form
 Route::get('/dashboard/login', [UserController::class, 'login'])
 ->name('login')
 ->middleware('guest');
 
 // Log User Out
-Route::post('/dashboard/logout', [UserController::class, 'logout']);
+Route::post('/dashboard/logout', [UserController::class, 'logout'])
+->middleware('auth');
 
 // Log In User
 Route::post('/dashboard/authenticate', [UserController::class, 'authenticate']);
