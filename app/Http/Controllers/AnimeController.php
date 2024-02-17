@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Anime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class AnimeController extends Controller
 {
@@ -40,5 +41,76 @@ class AnimeController extends Controller
             'anime_list' => DB::table('anime_list')->where('airing_season', $airing_season)->get(),
             'bar_title' => $airing_season
         ]);
+    }
+
+    // Show Create Form
+    public function create() {
+        return view('dashboard.create');
+    }
+
+    // Store Anime Data
+    public function store(Request $request) {
+        $formFields = $request->validate([
+            'title' => 'required',
+            'airing_season' => 'required',
+            'poster' => 'mimes:jpeg,png,bmp,tiff |max:4096',
+        ],
+
+        $messages = [
+            'mimes' => 'Only jpeg, png, bmp,tiff are allowed.'
+        ]);
+
+        $formFields['alt_title'] = $request->input('alt_title');
+
+        if($request->hasFile('poster')) {
+            $formFields['poster'] = $request->file('poster')->store('posters', 'public');
+        }
+
+        Anime::create($formFields);
+
+        // TODO : return back to dashboard.show (/dashboard/season/{period}/{year})
+        return redirect('/dashboard');
+    }
+
+    // Show Edit Form
+    public function edit(Anime $anime) {
+        return view('dashboard.edit', ['anime' => $anime]);
+    }
+
+    // Update Anime Data
+    public function update(Request $request, Anime $anime) {
+
+        $formFields = $request->validate([
+            'title' => 'required',
+            'airing_season' => 'required',
+            'poster' => 'mimes:jpeg,png,bmp,tiff |max:4096',
+        ],
+
+        $messages = [
+            'mimes' => 'Only jpeg, png, bmp,tiff are allowed.'
+        ]);
+
+        $formFields['alt_title'] = $request->input('alt_title');
+
+        if($request->hasFile('poster')) {
+            if(is_null($anime->poster)){
+                $formFields['poster'] = $request->file('poster')->store('posters', 'public');
+            } else {
+                Storage::disk('public')->delete($anime->poster);
+                $formFields['poster'] = $request->file('poster')->store('posters', 'public');
+            }
+        }
+
+        $anime->update($formFields);
+
+        // TODO : return back to dashboard.show (/dashboard/season/{period}/{year})
+        return redirect('/dashboard');
+    }
+
+    // Delete Anime
+    public function destroy(Anime $anime) {
+        Storage::disk('public')->delete($anime->poster);
+        $anime->delete();
+        return redirect('/dashboard');
     }
 }
