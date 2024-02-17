@@ -40,7 +40,7 @@
                         <a href="/dashboard/anime/{{$anime->id}}/edit">
                             <i class="fa-solid fa-pen"></i>&nbsp;Edit
                         </a>
-                        <form method="POST" action="dashboard/anime/{{$anime->id}}">
+                        <form method="POST" action="/dashboard/anime/{{$anime->id}}">
                             @csrf
                             @method('DELETE')
                             <button class="delete-btn">
