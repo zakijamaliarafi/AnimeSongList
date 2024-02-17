@@ -5,37 +5,90 @@
     height: 100vh;
 }
 
+.form-container-anime {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.form {
+    width: 350px;
+}
+
 .form-title {
     text-align: center;
     font-weight: 700;
     font-size: var(--size-2xl);
     padding: 1rem 5rem 1rem 5rem; 
     background-color: var(--clr-blue950);
+    border-radius: 5px 5px 0 0;
 }
 
 .form-input {
     padding: 1rem 0 1rem 0;
     background-color: rgba(148, 163, 184, 0.1);
+    border-radius: 0 0 5px 5px;
 }
 
-.input-box {
+.input-container {
     width: fit-content;
     margin: 1rem auto 1rem auto;
+}
+
+.input-label {
+    font-weight: 400;
+    font-size: var(--size-lg);
+    color: var(--clr-slate50);    
+}
+
+.input-box {    
     background-color: var(--clr-blue950);
+    border-radius: 5px;
 }
 
 .input-box input {
     width: 250px;
     height: 2rem;
+    padding: 0 0.5rem 0 0.5rem;
+    font-size: var(--size-base);
+    border-radius: 5px 0 0 5px;
+}
+
+.input-box-anime input {
+    width: 300px;
+    height: 2rem;
+    padding: 0.25rem 0.5rem 0 0.5rem;
+    font-size: var(--size-base);
+    border-radius: 5px;
 }
 
 .input-box i {
     margin: 0 0.5rem 0 0.5rem;
 }
 
-.form-input button {
-    margin-bottom: 1rem;
-    margin-left: 1.4rem;
+.error-msg {
+    font-weight: 400;
+    font-size: var(--size-sm);
+    color: rgb(153, 27, 27);
+}
+
+.login-btn {
+    margin: 0.5rem 0 1rem 2rem;
+}
+
+.form-btn {
+    margin: 0.5rem 1rem 1rem 1.5rem;
+}
+
+.back-btn {
+    font-weight: 400;
+    font-size: var(--size-sm);
+    color: var(--clr-slate50);
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 /* xs */
