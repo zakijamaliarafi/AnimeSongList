@@ -25,7 +25,7 @@
     <main class="container">
         <div class="content">
             <div class="content-image">
-                <img src="{{asset('images/solo.jpg')}}" alt="">
+                <img src="{{$anime->poster ? asset('storage/' . $anime->poster) : asset('/images/no-image.jpg')}}" alt="">
             </div>
             <div class="content-detail">
                 <div class="content-theme">
