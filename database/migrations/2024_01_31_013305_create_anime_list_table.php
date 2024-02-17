@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('anime_list', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('alt_title');
+            $table->string('alt_title')->nullable();
             $table->string('airing_season');
+            $table->string('poster')->nullable();
             $table->timestamps();
         });
     }
