@@ -23,15 +23,21 @@
                 <div class="form-input">
                     <form method="POST" action="/dashboard/authenticate">
                         @csrf
-                        <div class="input-box">
-                            <input name="name" type="text" placeholder="  Username">
-                            <i class="fa-solid fa-user"></i>
+                        <div class="input-container">
+                            <label for="name" class="input-label">Username</label>
+                            <div class="input-box">
+                                <input name="name" id="name" type="text">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
                         </div>
-                        <div class="input-box">
-                            <input name="password" type="password" placeholder="  Password">
-                            <i class="fa-solid fa-lock"></i>
+                        <div class="input-container">
+                            <label for="password" class="input-label">Password</label>
+                            <div class="input-box">
+                                <input name="password" id="password" type="password">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
                         </div>
-                        <button type="submit" class="btn">
+                        <button type="submit" class="btn login-btn">
                             <p>Log In</p>
                         </button>
                     </form>
