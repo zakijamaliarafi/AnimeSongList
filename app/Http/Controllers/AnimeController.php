@@ -29,7 +29,9 @@ class AnimeController extends Controller
     // Show Single Anime
     public function show(Anime $anime) {
         return view('anime.show', [
-            'anime' => $anime
+            'anime' => $anime,
+            'op_themes' => DB::table('songs')->where('anime_id', $anime->id)->where('type', 'opening')->get(),
+            'ed_themes' => DB::table('songs')->where('anime_id', $anime->id)->where('type', 'ending')->get()
         ]);
     }
 
