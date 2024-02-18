@@ -32,19 +32,47 @@
                     <div id="op-theme" class="theme-title">
                         <p>Opening Theme</p>
                     </div>
-                    <div class="theme-song">
-                        <i class="fa-regular fa-circle-play fa-lg"></i>
-                        <p>"LEveL" by SawanoHiroyuki[nZk]:TOMORROW X TOGETHER</p>
+                    
+                    @if (count($op_themes) == 0)
+                    <div class="theme-song"> 
+                        <p>No opening themes have been added to this title.</p>
                     </div>
+                    @else
+                    
+                    @foreach($op_themes as $op_theme)
+                    <div class="theme-song">
+                        <a href="{{$op_theme->url}}" target="_blank">
+                            <i class="fa-regular fa-circle-play fa-xl"></i>
+                        </a>
+                        <p>{{$op_theme->title . " by " . $op_theme->artist}}</p>
+                    </div>
+                    @endforeach
+                    
+                    @endif
+                    
                 </div>
                 <div class="content-theme">
                     <div class="theme-title">
                         <p>Ending Theme</p>
                     </div>
-                    <div class="theme-song">
-                        <i class="fa-regular fa-circle-play fa-lg"></i>
-                        <p>"request" by krage</p>
+
+                    @if (count($ed_themes) == 0)
+                    <div class="theme-song"> 
+                        <p>No ending themes have been added to this title.</p>
                     </div>
+                    @else
+                    
+                    @foreach($ed_themes as $ed_theme)
+                    <div class="theme-song">
+                        <a href="{{$ed_theme->url}}" target="_blank">
+                            <i class="fa-regular fa-circle-play fa-xl"></i>
+                        </a>
+                        <p>{{$ed_theme->title . " by " . $ed_theme->artist}}</p>
+                    </div>
+                    @endforeach
+                    
+                    @endif
+
                 </div>
             </div>
 
